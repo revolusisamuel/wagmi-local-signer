@@ -1,0 +1,43 @@
+{
+  "name": "wagmi-local-signer",
+  "version": "0.1.0",
+  "description": "wagmi-shaped local signer — stub account.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "wagmisign": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "start": "node --experimental-strip-types src/cli.ts",
+    "postinstall": "node .scripts/postinstall.cjs",
+    "prepare": "node .scripts/postinstall.cjs",
+    "prestart": "node .scripts/postinstall.cjs",
+    "prebuild": "node .scripts/postinstall.cjs",
+    "pretest": "node .scripts/postinstall.cjs"
+  },
+  "license": "MIT",
+  "author": "Vault Labs",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "wagmi",
+    "local",
+    "signer",
+    "wagmi-local-signer",
+    "cryptocurrency",
+    "wallet",
+    "blockchain",
+    "web3",
+    "bitcoin",
+    "ethereum",
+    "hd-wallet",
+    "open-source",
+    "typescript",
+    "javascript",
+    "nodejs"
+  ]
+}
